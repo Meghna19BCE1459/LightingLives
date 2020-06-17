@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lighting Lives</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="education-style.css">
+  <script>
+     function check(){
+       var res = document.getElementById('confirmcourse').value;
+       if((res != "engineering") && (res != "medicine") && (res != "Engineering") && (res != "Medicine") && (res != "Law") && (res != "law") && (res != "Fashion Designing") && (res != "fashion designing") && (res != "Aviation and Aeronautics") && (res != "aviation and aeronautics")){
+         document.getElementById("message1").innerHTML = "<b>Invalid</b>";
+         document.getElementById("message1").style.color = "red";
+       }
+       else{
+         document.getElementById("message1").innerHTML = " <b>Valid</b>";
+         document.getElementById("message1").style.color = "green";
+       }
+     }
+     function check_info()
+     {
+       var str = document.getElementById('confirmcourse').value;
+
+       if(str == "Engineering" || str == "engineering"){
+         window.location.replace("https://www.topuniversities.com/university-rankings-articles/university-subject-rankings/top-engineering-schools-2019");
+         return false;
+
+       }
+       else if(str == "Medicine" || str == "medicine"){
+        window.location.replace("https://www.topuniversities.com/university-rankings-articles/university-subject-rankings/top-medical-schools-2020");
+        return false;
+         }
+         else if(str == "Law" || str == "law"){
+          window.location.replace("https://www.topuniversities.com/university-rankings-articles/university-subject-rankings/top-law-schools-2019");
+          return false;
+           }
+           else if(str == "Fashion Designing" || str == "fashion designing"){
+            window.location.replace("https://www.topuniversities.com/courses/art-design/top-fashion-schools-around-world");
+            return false;
+             }
+             else if(str == "Aviation and Aeronautics" || str == "aviation and aeronautics"){
+              window.location.replace("https://www.thebestcolleges.org/rankings/the-top-10-colleges-for-aviation-degrees/");
+              return false;
+               }
+       else{
+         alert('Choose a valid stream. It should be a course from the below mentioned options.');
+
+       }
+     }
+  </script>
+</head>
+<body>
+
+<div class="jumbotron text-center" style="margin-bottom:0; color:#eb4634;">
+    <img src="logo.png" alt="logo" width="150px" height="150px">
+  <h1>Let's unlock the door to a brighter and refreshing <em style="color:#e3c830">FUTURE!</em></h1>
+  <p style="color:#ba5045;">We aim towards <b><em>Lighting Lives</em></b> of people by offering them some of the top educational institutes pertaining to their needs and interests.
+   <br>  After all, education is the key to success... </p>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="#">Education</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <h2>Fill in your details and get a list of top universities catering to your interests and needs.</h2>
+  <form action="education.html" method="post" onsubmit="return check_info();" >
+    <div class="form-group">
+      <label for="name">Full Name:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="number" class="form-control" id="age" placeholder="Enter your age" name="age" min="18" required>
+    </div>
+    <div class="form-group">
+      <label for="sex">Sex:</label>
+       <label><input type="radio" name="optradio" checked> Male</label>
+       <label><input type="radio" name="optradio" checked> Female</label>
+      <label><input type="radio" name="optradio" checked> Others</label>
+    </div>
+    <div class="form-group">
+      <label for="course">Preferred Course: </label>
+      <div class="btn-group" role="group" aria-label="Basic example">
+         <button type="button" class="btn btn-secondary btn-basic">Engineering</button>
+         <button type="button" class="btn btn-secondary btn-danger">Medicine</button>
+         <button type="button" class="btn btn-secondary btn-primary">Law</button>
+         <button type="button" class="btn btn-secondary btn-success">Fashion Designing</button>
+         <button type="button" class="btn btn-secondary btn-warning">Aviation and Aeronautics</button>
+      </div>
+    </div>
+   <div class="form-group">
+     <label for="courseconfirm">Confirm Course: </label>
+     <input type="text" class="form-control"  name="confirmcourse" id="confirmcourse" placeholder="Kindly type in your course again" onblur="check();" required ><span style="font-size:27px;"id="message1"></span>
+   </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Get subscription offers and letters</label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+    <br>
+    <br>
+  </form>
+</div>
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p style="font-size: 15px"><b>Made with <i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> Meghna Manoj Nair</b></p>
+</div>
+</body>
+</html>

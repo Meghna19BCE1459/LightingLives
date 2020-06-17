@@ -1,0 +1,75 @@
+.fakeimg {
+  height: 200px;
+  background: #aaa;
+}
+.jumbotron{
+  background-image: url(bg1.gif);
+  background-color: #fff;
+}
+.jumbotron p{
+  margin-right: 5px;
+  margin-left: 5px;
+
+}
+.jumbotron h1{
+  font-size: 45px;
+  font-weight: bold;
+}
+.navbar{
+  background-color: #a35449;
+}
+.navbar li{
+  color: #fff;
+  font-weight: bold;
+}
+body{
+  background-color: #f2b1b1;
+}
+
+#cont
+{
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(contact.gif);
+  background-size: cover;
+  background-position: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #777;
+}
+#cont h1
+{
+  color: #ffffff !important;
+}
+#cont h4
+{
+  color: #ffffff !important;
+}
+#cont h5
+{
+  color: #ffffff !important;
+}
+
+.contact-form
+{
+  padding: 15px;
+
+}
+.form-control
+{
+  border-radius: 0 !important;
+  border: none !important;
+}
+::placeholder
+{
+  color: #777 !important;
+}
+.follow{
+  background: #fff;
+  padding: 10px;
+  margin: 15px;
+}
+.contact-info .fa
+  {
+    margin: 10px;
+    color:#007bff;
+    font-weight:bold;
+  }

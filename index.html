@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lighting Lives</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="home-style.css">
+  <script>
+    $(".btn .reservetable").click(function(){
+        $("#reserveModal").modal('show');
+    });
+    $("#closereserve").click(function(){
+      $("#reserveModal").modal("hide");
+    });
+    $(".loginto").click(function(){
+       $("#loginModal").modal('show');
+    });
+    $("#closelogin").click(function(){
+     $("#loginModal").modal("hide");
+    });
+    });
+
+  </script>
+</head>
+<body>
+
+<div class="jumbotron text-center" style="margin-bottom:0; color:#eb4634;">
+    <img src="logo.png" alt="logo" width="150px" height="150px">
+  <h1>Let's unlock the door to a brighter and refreshing <em style="color:#e3c830">FUTURE!</em></h1>
+  <p style="color:#ba5045;">We aim towards <b><em>Lighting Lives</em></b> of people by offering them some of the top educational institutes pertaining to their needs and interests.
+   <br>  After all, education is the key to success... </p>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>About Us</h2>
+      <h5>We initiated this organization in 2019.</h5>
+      <div><img src="org.jpg" alt="organization" width="270px"></div>
+      <p>Liitle did we know that with just 10 people to commence with, we would be able to spread education and reach out to a massive audience in such a short span of time.</p>
+      <h3>Top University Listings</h3>
+      <p>Take a quick look at some of the currently trending unviersities</p>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="https://www.topuniversities.com/student-info/choosing-university/worlds-top-100-universities">Top Universities in the World</a></li>
+        <li><a href="https://www.4icu.org/in/">Top Universities in India</a></li>
+        <li><a href="https://www.usnews.com/best-colleges/rankings">Top Universities in America</a></li>
+        <br>
+      </ul>
+      <button style="margin-left: 18px;" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Reviews</button>
+      <hr class="hidden-sm hidden-md hidden-lg">
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Reviews</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="email" id="defaultForm-email" class="form-control validate" placeholder="Full Name">
+          <label data-error="wrong" data-success="right" for="defaultForm-email">Your name</label>
+        </div>
+        <div class="md-form mb-4">
+          <input type="text" class="form-control validate" placeholder="Which college do you want to post a review on? ">
+          <label for="college-name">University/College</label>
+        </div>
+        <div class="md-form mb-4">
+          <textarea name="review" rows="10" cols="60" placeholder="Type your review..."></textarea>
+          <br>
+          <label for="college-name">Review</label>
+        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-success">Post</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="text-center">
+  <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm"><b>Are you ready to post a review?</b></a>
+
+</div>
+</div>
+</div>
+    <div class="col-sm-8">
+      <h2>Why Study in A Renowned Institute?</h2>
+      <h5>It's of extreme importance that we choose the right place to develop our slills and prepare ourselves to jump into a phenonmenally challenging corporate world/career.</h5>
+      <div><img src="renowned.jpg" width="700px" height="500px" alt="institute"></div>
+      <p>It is the college you go to along with how you utilise the time spent there that decides the success of your career. Before choosing a college, do a little research. These days it is possible for a college to become well-known through advertising even if it is not accredited or recognised.
+         So, first check if a college is recognised or approved by the University Grants Commission or the All India Council for Technical Education. Next, try to find out the quality of faculty members. A good placement cell can make a difference but if the other college is better in many other respects, then you can always establish a placement club with like-minded individuals. No matter which college you choose, pack your college experience with internships, part-time jobs and social activities.</p>
+      <p>Very often, students make the mistake of choosing a course that is popular in India and assume that it will be in demand overseas too but that is not always the case. Thus, understanding the job market in the country you are planning to study in will help you make a better decision. The GRE and Toefl scores are required if you are planning to study in the US. A score of 90 percentile is generally considered good. It will be better if you gather some work experience before proceeding for a master’s degree abroad.</p>
+      <br>
+      <h2>How to follow your passion and choose a creer wisely?</h2>
+      <h5>Follow your <em><b>dreams</b></em> and work <em><b>smart</b></em>.</h5>
+      <div><img src="career.jpg" alt="career" height="400px" width="700px"></div>
+      <p>Discover which Holland personality types you are most like, then match your results with promising careers, college majors and training programs. Read about John Holland's Theory of Career Choice to understand how your success and satisfaction in a job, school, or college is related to your personality. Do the activities in Learn about Yourself and Identify Your Skills to understand yourself better.
+         Explore what career well-being means and how to strengthen yours.</p>
+      <p>At High-Quality Decision Making you will learn a method based on many scientific studies that is widely used in business and medical settings. It is easy to understand and use.
+         Still not sure?  Go to Career Indecision and consider getting help from a professional counselor: Career Counseling</p>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p style="font-size: 15px"><b>Made with <i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> Meghna Manoj Nair</b></p>
+</div>
+
+</body>
+</html>
